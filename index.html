@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Media Calculator</title>
+  </head>
+  <body>
+    <header></header>
+    <div class="container">
+      <div class="result-container">
+        <h3 id="result"></h3>
+      </div>
+      <form action="" id="form-items">
+        <div class="each-item-div">
+          <label for="number1"
+            >Number <span class="index-number">1</span></label
+          >
+          <input type="text" class="numbers" id="number1" />
+        </div>
+        <div class="each-item-div">
+          <label for="number2"
+            >Number <span class="index-number">2</span></label
+          >
+          <input type="text" class="numbers" id="number2" />
+        </div>
+        <div class="each-item-div">
+          <label for="number3"
+            >Number <span class="index-number">3</span></label
+          >
+          <input type="text" class="numbers" id="number3" />
+        </div>
+        <div class="buttons">
+          <input type="button" value="Submit" id="btn-submit" class="btn" />
+          <input type="button" value="Clear" id="btn-clear" class="btn" />
+          <button class="btn-add">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

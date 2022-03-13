@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap");
+
+* {
+  font-family: "Orbitron", sans-serif;
+}
+:root {
+  --dark: #1a1a40;
+  --blue: #270082;
+  --purple: #7a0bc0;
+  --neonPink: #fa58b6;
+}
+
+body {
+  background-color: var(--dark);
+}
+.container {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--blue);
+  width: 24rem;
+  padding: 20px;
+}
+label {
+  margin: 15px;
+  filter: drop-shadow(1px 3px 5px white);
+}
+
+.numbers {
+  align-self: right;
+  position: relative;
+  margin-right: 10px;
+}
+
+.buttons {
+  margin: 10px;
+}
+.btn {
+  border-style: none;
+  background-color: #fa58b6;
+  color: white;
+  box-shadow: var(--neonPink) 1px 1px 12px 2px;
+}
+#form-items {
+  display: inline-block;
+}
+
+.each-item-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.btn-add {
+  animation: idleState 0.5s ease-in forwards infinite alternate;
+}
+
+/* .btn-add::before {
+  content: "";
+  background-color: var(--neonPink);
+  width: 20px;
+  height: 20px;
+} */
+
+@keyframes idleState {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
