@@ -18,31 +18,34 @@
     <header></header>
     <div class="container">
       <div class="result-container">
-        <h3 id="result"></h3>
+        <h3 id="result">194</h3>
+        <div class="result-bg"></div>
       </div>
       <form action="" id="form-items">
-        <div class="each-item-div">
-          <label for="number1"
-            >Number <span class="index-number">1</span></label
-          >
-          <input type="text" class="numbers" id="number1" />
-        </div>
-        <div class="each-item-div">
-          <label for="number2"
-            >Number <span class="index-number">2</span></label
-          >
-          <input type="text" class="numbers" id="number2" />
-        </div>
-        <div class="each-item-div">
-          <label for="number3"
-            >Number <span class="index-number">3</span></label
-          >
-          <input type="text" class="numbers" id="number3" />
+        <div class="inputsForm" id="top-side-form">
+          <div class="each-item-div">
+            <label for="number1"
+              >Number <span class="index-number">1</span></label
+            >
+            <input type="number" class="numbers" id="number1" />
+          </div>
+          <div class="each-item-div">
+            <label for="number2"
+              >Number <span class="index-number">2</span></label
+            >
+            <input type="number" class="numbers" id="number2" />
+          </div>
+          <div class="each-item-div">
+            <label for="number3"
+              >Number <span class="index-number">3</span></label
+            >
+            <input type="number" class="numbers" id="number3" />
+          </div>
         </div>
         <div class="buttons">
           <input type="button" value="Submit" id="btn-submit" class="btn" />
           <input type="button" value="Clear" id="btn-clear" class="btn" />
-          <button class="btn-add">
+          <button id="btn-add" class="">
             <i class="fa-solid fa-plus"></i>
           </button>
         </div>
@@ -51,3 +54,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+

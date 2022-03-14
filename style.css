@@ -8,6 +8,7 @@
   --blue: #270082;
   --purple: #7a0bc0;
   --neonPink: #fa58b6;
+  --specialGreen: #28FFBF;
 }
 
 body {
@@ -23,6 +24,20 @@ body {
   width: 24rem;
   padding: 20px;
 }
+
+#result {
+text-align: center;
+transform: translateY(100%);
+}
+
+.result-container {
+  position: relative;
+  background-color: var(--dark);
+  height: 4.5rem;
+
+}
+
+
 label {
   margin: 15px;
   filter: drop-shadow(1px 3px 5px white);
@@ -42,6 +57,7 @@ label {
   background-color: #fa58b6;
   color: white;
   box-shadow: var(--neonPink) 1px 1px 12px 2px;
+  cursor: pointer;
 }
 #form-items {
   display: inline-block;
@@ -53,8 +69,13 @@ label {
   margin: 20px;
 }
 
-.btn-add {
+#btn-add {
   animation: idleState 0.5s ease-in forwards infinite alternate;
+  cursor: pointer;
+  border: none;
+  border-style: none;
+  background-color: var(--specialGreen);
+  color: white;
 }
 
 /* .btn-add::before {
@@ -72,3 +93,4 @@ label {
     transform: translateY(-10%);
   }
 }
+
