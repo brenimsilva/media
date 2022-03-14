@@ -8,7 +8,7 @@
   --blue: #270082;
   --purple: #7a0bc0;
   --neonPink: #fa58b6;
-  --specialGreen: #28FFBF;
+  --specialGreen: #28ffbf;
 }
 
 body {
@@ -26,17 +26,15 @@ body {
 }
 
 #result {
-text-align: center;
-transform: translateY(100%);
+  text-align: center;
+  transform: translateY(100%);
 }
 
 .result-container {
   position: relative;
   background-color: var(--dark);
   height: 4.5rem;
-
 }
-
 
 label {
   margin: 15px;
@@ -51,6 +49,7 @@ label {
 
 .buttons {
   margin: 10px;
+  text-align: center;
 }
 .btn {
   border-style: none;
@@ -94,3 +93,24 @@ label {
   }
 }
 
+.newItem {
+  animation: appears 0.3s ease-in forwards;
+}
+
+@keyframes appears {
+  0% {
+    transform: translateX(-3%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateX(0);
+    background-color: var(--blue);
+    opacity: 100%;
+  }
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  background-color: var(--blue);
+}
